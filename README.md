@@ -1,30 +1,41 @@
-# Medical-AI
-# Image-Classification-using-CNN
+# Medical-AI  
+## Image Classification using CNN  
 
-![index](https://user-images.githubusercontent.com/69073063/122219516-cc78ce80-ceaf-11eb-9907-40d813d810c9.png)
+### Project: Pneumonia Detection from X-Ray Images using Convolutional Neural Network  
 
-Pneumonia detection from X-ray images using Convolution Neural Network
+---Data set link : https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
-Content
+## Dataset  
+- The dataset is structured into **3 folders**: `train`, `test`, and `val`, each containing subfolders for two categories: **Pneumonia** and **Normal**.  
+- A total of **5,863 chest X-ray images (JPEG format)** are included, categorized into Pneumonia and Normal.  
+- The images were collected from **pediatric patients aged 1–5 years** at **Guangzhou Women and Children’s Medical Center, Guangzhou**.  
+- All chest X-rays were part of routine clinical care.  
 
-The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). There are 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal).
+---
 
-Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care.
+## Data Quality & Annotation  
+- Chest radiographs underwent **quality control screening**, removing low-quality or unreadable scans.  
+- Diagnoses were graded by **two expert physicians**, with an additional review by a **third expert** for the evaluation set to minimize grading errors.  
 
-For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert.
+---
 
-![Screenshot_20210616_141819](https://user-images.githubusercontent.com/69073063/122218143-693a6c80-ceae-11eb-9ba0-b93199aaa355.png)
+## Model Development  
+- A **Convolutional Neural Network (CNN)** was developed using **Keras** and **TensorFlow**.  
 
-A Convolution neural network was build using keras and Tensorflow
+---
 
-![Screenshot_20210616_142047](https://user-images.githubusercontent.com/69073063/122218813-190fda00-ceaf-11eb-96b4-ee5b240e54a6.png)
+## Evaluation  
+- Achieved **96.68% training accuracy** and **93.10% testing accuracy**, which is strong given the dataset size and class imbalance.  
+- Evaluation metrics and visualization included predicted images with their corresponding percentage probabilities.  
 
-Evaluation metrics:
+---
 
-![Screenshot_20210616_142202](https://user-images.githubusercontent.com/69073063/122218847-23ca6f00-ceaf-11eb-8005-d6797acf426d.png)
+## Visualizations  
+- Screenshots and plots include:  
+  - Model architecture.  
+  - Evaluation metrics.  
+  - Sample predictions with confidence percentages.  
 
-visualization of some of the predicted images with percentage %
-
-![Screenshot_20210616_142122](https://user-images.githubusercontent.com/69073063/122218901-2d53d700-ceaf-11eb-9db3-98b7a8e7d2a9.png)
+---
 
 Did able to achieve the training accuracy of **96.68 %** and the testing accuracy of **93.10 %**. That's pretty decent, considering the size and the imbalance nature of the dataset.
